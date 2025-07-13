@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Eid - JARNY Software Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        :root {
+            --eid-green: #2e8b57;
+            --eid-gold: #ffd700;
+            --eid-blue: #4169e1;
+            --eid-red: #e25822;
+            --eid-purple: #9370db;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #f8f9fa 100%);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        .eid-header {
+            background: linear-gradient(135deg, var(--eid-green) 0%, var(--eid-blue) 100%);
+            color: white;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .eid-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://i.ibb.co/8XJZQ0m/mosque-silhouette.png') center/contain repeat-x;
+            opacity: 0.1;
+        }
+        
+        .eid-header h1 {
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .eid-header .lead {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .btn-eid {
+            background: linear-gradient(to right, var(--eid-gold), var(--eid-red));
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn-eid:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            color: #fff;
+        }
+        
+        .btn-eid::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--eid-red), var(--eid-gold));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-eid:hover::before {
+            opacity: 1;
+        }
+        
+        .card {
+            border: none;
+            background: white;
+            color: #333;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-top: 5px solid var(--eid-green);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .card-title {
+            color: var(--eid-blue);
+            font-weight: 600;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--eid-purple);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+            color: var(--eid-green);
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--eid-gold), var(--eid-red));
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, var(--eid-purple) 0%, var(--eid-blue) 100%);
+            color: white;
+            padding: 60px 0;
+            margin-top: 50px;
+        }
+        
+        .contact-section a {
+            color: var(--eid-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-section a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .lantern {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background: var(--eid-red);
+            border-radius: 50% 50% 5px 5px;
+            box-shadow: 0 0 20px rgba(255,215,0,0.7);
+            animation: swing 3s infinite alternate;
+        }
+        
+        .lantern::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            background: var(--eid-gold);
+            border-radius: 50%;
+        }
+        
+        .lantern::after {
+            content: "★";
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--eid-gold);
+        }
+        
+        @keyframes swing {
+            0% { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: var(--eid-gold);
+            opacity: 0.7;
+            animation: fall 5s linear infinite;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+        
+        .footer-image {
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        .footer-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .whatsapp-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Lanterns -->
+    <div class="lantern" style="top: 20%; left: 5%;"></div>
+    <div class="lantern" style="top: 15%; right: 8%; animation-delay: 0.5s;"></div>
+    <div class="lantern" style="top: 25%; left: 12%; animation-delay: 1s;"></div>
+    
+    <!-- Confetti -->
+    <div id="confetti-container"></div>
+    
+    <div class="eid-header">
+        <div class="container">
+            <h1 class="display-3 animate__animated animate__fadeInDown">🌙 Eid Mubarak! ✨</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">From all of us at JARNY Software Solutions</p>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Wishing you a blessed Eid filled with peace, happiness, and prosperity</p>
+            <a href="https://api.whatsapp.com/send?phone=+8801758367107&text=Hi" target="_blank"><button class="btn btn-eid animate__animated animate__pulse animate__infinite mt-3">Celebrate with Us</button></a>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="section-title animate__animated animate__fadeIn">About Us</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">My name is Chompa Akter, and I'm reaching out on behalf of JARNY Software Solutions Agency, a dynamic startup agency dedicated to helping businesses like yours thrive in the digital space.</p>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">At JARNY, we specialize in creating custom website designs and application development solutions tailored to your unique business needs. Whether you're looking to establish a strong online presence, streamline operations, or engage your audience with innovative tools, we're here to help you achieve your goals.</p>
+                
+                <h2 class="section-title mt-5 animate__animated animate__fadeIn">Our Services</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">🌐</div>
+                        <h5 class="card-title">Custom Website Design</h5>
+                        <p>Visually stunning, user-friendly, and responsive websites that reflect your brand identity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">📱</div>
+                        <h5 class="card-title">Web & Mobile App Development</h5>
+                        <p>Scalable, secure, and cross-platform mobile apps to connect with your audience on the go.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">🛒</div>
+                        <h5 class="card-title">E-commerce Solutions</h5>
+                        <p>Robust platforms to help you sell online effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">🎨</div>
+                        <h5 class="card-title">UI/UX Design</h5>
+                        <p>Intuitive and engaging designs to ensure seamless user experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">🚀</div>
+                        <h5 class="card-title">SEO & Digital Marketing</h5>
+                        <p>Strategies to boost your online visibility and drive traffic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card p-3 h-100">
+                    <div class="card-body">
+                        <div class="service-icon">🛠️</div>
+                        <h5 class="card-title">Maintenance & Support</h5>
+                        <p>Ongoing support to keep your digital assets running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <h2 class="section-title animate__animated animate__fadeIn">Let's Connect</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">We'd love the opportunity to discuss how we can collaborate to bring your vision to life. Let's schedule a call at your convenience to explore how we can help your business grow.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mb-5 animate__animated animate__fadeIn">
+        <a href="https://jarnysoftware.bsite.net/" target="_blank">
+            <img src="https://jarny-business-services.vercel.app/Images/Jarny_mail_footer_image.png" alt="JARNY Software Solutions" class="img-fluid footer-image">
+        </a>
+    </div>
+    
+    <div class="contact-section animate__animated animate__fadeIn">
+        <div class="container">
+            <h3>Let's Discuss How We Can Bring Your Vision to Life!</h3>
+            <p>I'd love to schedule a quick call at your convenience. Let me know what works for you.</p>
+            <p><strong>Looking forward to collaborating!</strong></p>
+            <p>Warm regards,</p>
+            <p><strong>Jarnysoft Sales</strong><br>Sales Executive<br>Jarny Software Solutions</p>
+            <p>Contact Us: 
+                <strong>
+                    <a href="https://api.whatsapp.com/send?phone=+8801758367107&text=Hi" target="_blank" class="me-3">
+                        <img src="https://jarny-business-services.vercel.app/Images/whatsapp_logo_green.png" alt="WhatsApp" class="whatsapp-icon me-1" width="20px" height="20px"> +8801758367107
+                    </a> / 
+                    <a href="https://api.whatsapp.com/send?phone=+9109833812843&text=Hi" target="_blank">
+                        <img src="https://jarny-business-services.vercel.app/Images/whatsapp_logo_green.png" alt="WhatsApp" class="whatsapp-icon me-1" width="20px" height="20px"> +91 983-381-2843
+                    </a>
+                </strong>
+            </p>
+            <a href="mailto:jarnysoftware.sales@gmail.com" class="d-block mt-3">Email Us: jarnysoftware.sales@gmail.com</a>
+        </div>
+    </div>
+	
+	<!-- canva code -->
+	<div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGk_zu-ZOE/5L7WHH9YKMYCXE7lzMXxrg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGk_zu-ZOE&#x2F;5L7WHH9YKMYCXE7lzMXxrg&#x2F;view?utm_content=DAGk_zu-ZOE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Chompa Akter DigitalMarketer</a> by Chompa Akter
+    
+	<!-- canva code -->
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Create confetti
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#ffd700', '#e25822', '#4169e1', '#2e8b57', '#9370db'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.width = Math.random() * 10 + 5 + 'px';
+                confetti.style.height = confetti.style.width;
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confetti.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(confetti);
+            }
+        }
+        
+        // Animate elements when they come into view
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate__animated');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add(element.classList[1]);
+                }
+            });
+        }
+        
+        window.addEventListener('load', createConfetti);
+        window.addEventListener('scroll', animateOnScroll);
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+</body>
+</html>

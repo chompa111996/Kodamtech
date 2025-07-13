@@ -1,0 +1,228 @@
+
+
+https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
+
+Instant Data Scraper : Tool or Software for Data / Information access and download in different formats.
+
+Instant Data Scraper is an automated data extraction tool for any website. It uses AI to predict which data is most relevant on a 
+HTML page and allows saving it to Excel or CSV file (XLS, XLSX, CSV).
+
+
+----------------------------------------------------------------------------------------
+
+https://youtu.be/ws8vscZAG74?si=NJNoJBbGXlIPGMVE
+
+Lead generation follow him
+
+--------------------------
+
+mailto:abcd@gmail.com
+
+abcd@gmail.com
+
+
+---------------------------
+
+chompa111996@gmail.com
+300878*#
+-------------------
+akterchompa619@gmail.com
+Chompa 300878
+chompa 300878
+-----------------------
+chompa.sheikh@zohomail.com
+202526*#
+
+  Simicolon = ;
+  
+  !	@	#	$	%	^	&	*	(	)	_	+	-	=
+  {	}	|	\	/	?	>	<	,	.	~	`
+
+----------------------------------
+
+zohomail login
+Go to Accounts 
+Security
+Application-Specific Passwords
+-------
+
+Bulk Email Service
+0Uej35zmgSTG
+
+
+
+
+
+-----------------------------
+
+akshay.kodam@zohomail.in
+) akshay :  akshay.kodam@zohomail.in
+			 
+2 )ranjeet : rs8558778@gmail.com			 
+
+3 ) yakin : rawalyakindra@gmail.com	
+				
+4 ) Jitendra : Jitendragymer@gmail.com
+
+5 ) Nitin : ny937927@gmail.com 
+--------------------------
+
+formula for extract string / mid
+
+MID(A1, FIND(":", A1) + 1, LEN(A1))
+-------------------
+
+complete url 
+
+https://www.youtube.com
+
+simple
+
+www.youtube.com
+
+direct name
+
+youtube.com
+
+-------------------------------------------------------
+
+
+Steps for Bulk Email
+
+1. Pahela ye karna hai = Google Excel 
+   sheet maitain kar na hai
+
+2. Pabbly se connect kar na padega / 
+   www.pabbly.com/connect/
+
+3. Link kar na padega apna Google 
+   sheet se Zoho mail se.
+
+4. Icoginite Mode google chrome 
+   = www.pabbly.com/connect/ 
+
+5. Signup / sign in , sab se niche 
+   jake connect Access pabbly p click keya
+
+6. Create workflow button click, 
+    Name = Google Sheets to Zoho mail.
+   create button click keya.
+
+7. Choose Your First Application: Trigger, 
+    Choose App = Google Sheet.
+
+8. Google Sheet from Google Drive = 
+   (Spread Sheet/ Workbook / Excel Name) 
+   uske ander multiple Sheet bana sakte
+   Work sheet bana sakte.
+   https://workspace.google.com/products/sheets/
+   Sign in.	
+
+9. Name = Client Name , Email = Client Email ,
+   Subject, Body = Message.
+
+10. Menu = Add-Ons, Get Add-ons , 
+    search keya ussne = Pabbly Connect Webhooks.
+
+11. after install Pabbly Connect Webhooks, 
+    refresh the google sheet.
+
+12. Menu = Add-ons = Pabbly Connect Webhooks = 
+    Inital Setup.
+
+13. Webhook Url 
+
+14. Trigger Column (Last Colum eg: D), 
+    Copy Webhook Url , Submit.
+
+15. Send On Event.
+
+16. Mapping Jo bhi Excel Sheet mai rahega vo 
+    pabbly.com app mai Mapping 
+    ho jaye ga. Eg : Label & Value 
+    (Name , Email, Subject, Body, RowIndex )
+
+17. (2. Choose Your Next Application : Action )
+    search Zoho, Choose App = Zoho Mail, 
+    Action Event = Send Email, Connect button.
+
+18. Connect p jaise click keya  : 
+    Connect Zoho Mail Account.
+
+19. Zoho Mail : Add New Connection.
+
+20. New Connection Name : uske ander 
+    Connect With Zoho Mial button p click keya.
+
+ 
+21. pop up panel open huva Authentication., 
+   Zoho.com ko copy paste keya and Done keya.
+
+22. Accept keya , uske bad Successful msg ana chaheye.
+
+23. Connect.pabbly.com , settings keya, Account ID,
+
+	To :  
+        Insert Data from Previous Step : 
+	
+
+
+
+24. Zohomail  , Go to Settings,
+    Mail Menu then , Add POP3 Settings.
+
+25. Copy your mail and paste 
+    Connect.pabbly.com/From field.
+
+26.  Mapp all the fields, and 
+     ( Save & Send Test Request Button ) Clicked.
+
+27. Then you will received the response like Success.
+
+28. Test is Done.
+
+	
+------------------------
+
+Name
+Chompa Alexander
+
+Email
+
+
+subject
+Loan Recovery
+
+Body
+
+Hello Mam, you haven't paid the loan installment of
+1400 INR this month
+
+
+--------------------------
+
+Chompa akter	akterchompa619@gmail.com	test2	This is test2 for mail
+akshay kodam 11	akshaykodam11@gmail.com	test2 aky	This is test2 for mail for aky    
+
+href="https://api.whatsapp.com/send?phone=8801644451916&text=Hi?"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

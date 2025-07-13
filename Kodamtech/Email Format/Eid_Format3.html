@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Eid - JARNY Software Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        :root {
+            --eid-green: #28a745;
+            --eid-gold: #ffcc00;
+            --eid-blue: #007bff;
+            --eid-red: #dc3545;
+            --eid-purple: #6f42c1;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fff5cc 0%, #fff0f5 100%);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        .eid-header {
+            background: linear-gradient(135deg, var(--eid-green), var(--eid-blue), var(--eid-purple));
+            color: white;
+            padding: 70px 0;
+            position: relative;
+        }
+        
+        .eid-header h1 {
+            font-weight: 700;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        .eid-header .lead {
+            font-size: 1.8rem;
+        }
+        
+        .btn-eid {
+            background: linear-gradient(to right, var(--eid-gold), var(--eid-red));
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-eid:hover {
+            transform: scale(1.1);
+        }
+        
+        .section-title {
+            color: var(--eid-purple);
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--eid-gold), var(--eid-red));
+        }
+        
+        .card {
+            background: white;
+            border: none;
+            border-top: 5px solid var(--eid-green);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .card-title {
+            color: var(--eid-blue);
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, var(--eid-purple), var(--eid-red));
+            color: white;
+            padding: 50px 0;
+        }
+        
+        .footer-image {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-image:hover {
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="eid-header">
+        <div class="container">
+            <h1 class="display-3 animate__animated animate__fadeInDown">🌙 Eid Mubarak! ✨</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Wishing you peace, happiness, and success!</p>
+            <a href="#services" class="btn btn-eid animate__animated animate__pulse animate__infinite mt-3">Discover More</a>
+        </div>
+    </div>
+    
+    <div class="container py-5" id="services">
+        <h2 class="section-title animate__animated animate__fadeIn">Our Services</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="card p-4">
+                    <h5 class="card-title">🌐 Custom Website Design</h5>
+                    <p>Visually stunning and responsive websites tailored to your brand.</p>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card p-4">
+                    <h5 class="card-title">📱 Mobile App Development</h5>
+                    <p>Scalable and secure mobile applications for your business.</p>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card p-4">
+                    <h5 class="card-title">🛒 E-commerce Solutions</h5>
+                    <p>Sell online effortlessly with robust e-commerce platforms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-section">
+        <div class="container">
+            <h3>Let's Connect!</h3>
+            <p>We’d love to help bring your vision to life. Contact us today!</p>
+            <a href="mailto:jarnysoftware.sales@gmail.com" class="btn btn-light">Email Us</a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

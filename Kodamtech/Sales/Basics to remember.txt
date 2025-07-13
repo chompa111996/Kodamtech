@@ -1,0 +1,40 @@
+
+EXCEL SHORT CUT KEYS OF METHODS.
+
+1. Header Column Fixed = Auto Filter / Freeze row
+
+Menu => Data => Auto Filter
+Menu => View => Freeze Panels => Freeze row
+
+
+
+Data Gererate kar rahe ho from Goole Map
+
+Name	
+Ratting	
+Category	
+Mobile	
+Address	
+Website	
+Directions	
+
+Chompa123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

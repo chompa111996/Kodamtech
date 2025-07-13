@@ -1,0 +1,13 @@
+MID(A1, FIND(":", A1) + 1, LEN(A1))
+
+Copy = Strg/Ctrl + C
+
+Paste = Strg/Ctrl + v
+
+Tab Swith : Alt + Tab
+
+1) To  : Client Email Id Excel
+2) CC : akshay.kodam@zohomail.in
+3) Subject = 
+4) Body / Message
+5) Attachment
